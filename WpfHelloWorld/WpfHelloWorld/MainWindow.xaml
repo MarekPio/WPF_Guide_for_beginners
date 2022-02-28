@@ -5,9 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfHelloWorld"
         mc:Ignorable="d"
-        Title="Hello World Window" Height="450" Width="800">
+        Title="Hello World Window" Height="300" Width="300">
     <StackPanel>
-        <Label>Hello World</Label>
-        <Button>Click Me!</Button>
+        <Label>Hello Marek</Label>
+        <Button>Welcome to the course</Button>
     </StackPanel>
 </Window>
