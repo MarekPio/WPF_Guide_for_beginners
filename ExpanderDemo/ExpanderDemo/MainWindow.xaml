@@ -5,8 +5,30 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ExpanderDemo"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="500" Width="800">
     <Grid>
+        <Expander Expanded="Expander_Expanded">
+            <Expander.Header>
+                <StackPanel Orientation="Horizontal">
+                    <Image Width ="64"
+                           Source="/Images/Homer_Simpson_2006.png" />
+                    <TextBlock VerticalAlignment="Center">Click to expand and click again to hide the content</TextBlock>
+
+                    
+                </StackPanel>
+            </Expander.Header>
+            <StackPanel>
+                <Button>Click me</Button>
+                <DatePicker></DatePicker>
+                <TextBlock
+                TextWrapping="Wrap"
+                FontSize="20"
+                >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat, massa tincidunt semper tincidunt, libero nulla hendrerit tellus, et malesuada tellus ante sit amet tellus. Proin vehicula felis at semper blandit. Pellentesque ut sem porta, tincidunt mauris id, posuere nisl. Fusce sit amet ex ac ipsum semper volutpat. Aliquam sed lobortis turpis, eget viverra felis. Maecenas at sodales tellus. Suspendisse scelerisque magna non consequat consectetur. Aenean sit amet interdum metus. Phasellus iaculis aliquam est finibus porttitor. Etiam tempor suscipit metus et ultrices. Maecenas scelerisque elementum ipsum eget condimentum. Phasellus facilisis non erat in posuere. Aliquam tempor mi ut lorem aliquam lobortis.
+                </TextBlock>
+
+            </StackPanel>
+        </Expander>
         
     </Grid>
 </Window>

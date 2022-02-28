@@ -24,5 +24,10 @@ namespace ExpanderDemo
         {
             InitializeComponent();
         }
+
+        private void Expander_Expanded(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Expander was clicked");
+        }
     }
 }
