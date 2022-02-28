@@ -6,7 +6,19 @@
         xmlns:local="clr-namespace:TextBoxDemo"
         mc:Ignorable="d"
         Title="MainWindow" Height="200" Width="300">
-    <Grid>
-        
-    </Grid>
+    <StackPanel>
+        <TextBox 
+            FontSize="30"
+            Margin="50"
+            AcceptsReturn="True"
+            TextWrapping = "Wrap"
+            SpellCheck.IsEnabled="True"
+            Language="en-US"
+            Background="Aqua"
+            Foreground="Brown"
+            Text="Hello World!"
+            IsReadOnly="True"
+            />
+
+    </StackPanel>
 </Window>
