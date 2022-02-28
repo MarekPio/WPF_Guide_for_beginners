@@ -16,7 +16,12 @@
             Value="50"
             ValueChanged="mySlider_ValueChanged"
         ></Slider>
-        <TextBlock x:Name="myTextBlock"></TextBlock>
+        <TextBlock 
+            x:Name="myTextBlock" 
+            FontSize="{Binding ElementName=mySlider, Path=Value, UpdateSourceTrigger=PropertyChanged}"
+            >
+            Hello
+        </TextBlock>
         
     </StackPanel>
 </Window>
