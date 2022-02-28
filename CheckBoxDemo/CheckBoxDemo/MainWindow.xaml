@@ -1,0 +1,34 @@
+﻿<Window x:Class="CheckBoxDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CheckBoxDemo"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="200" Width="200">
+    <StackPanel>
+        <Label>Topings</Label>
+        <CheckBox x:Name="cbParent" IsThreeState="True" Checked="cbParentCheckedChanged" Unchecked="cbParentCheckedChanged">
+            
+        </CheckBox>
+        <CheckBox Margin="15,5" 
+            x:Name="cbCheese"
+            VerticalContentAlignment="Center"
+                  Unchecked="cbTopingsCheckedChanged"
+                  Checked="cbTopingsCheckedChanged"
+                  >
+            <WrapPanel>
+                <Image Width="32" Source="https://files.softicons.com/download/food-drinks-icons/desktop-buffet-icons-by-aha-soft/png/64x64/Cheese.png"></Image>
+                <Label Name="lbCheese">Extra cheese</Label>
+            </WrapPanel>
+        </CheckBox>
+        <CheckBox x:Name="cbTuna" Margin="15,5" 
+                  Unchecked="cbTopingsCheckedChanged"
+                  Checked="cbTopingsCheckedChanged"
+                  >Tuna</CheckBox>
+        <CheckBox x:Name="cbHam" Margin="15,5" 
+                  Unchecked="cbTopingsCheckedChanged"
+                  Checked="cbTopingsCheckedChanged"
+                  >Ham</CheckBox>
+    </StackPanel>
+</Window>
