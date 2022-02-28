@@ -5,8 +5,38 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:RadioButtonDemo"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+        Title="MainWindow" Height="350" Width="300">
+    <StackPanel>
+        <Label FontWeight="Bold">Who do you wote for?</Label>
+        <RadioButton GroupName="Presidents" FontSize="30" VerticalContentAlignment="Center">
+            <WrapPanel>
+                <Image Width="32" Source="https://upload.wikimedia.org/wikipedia/commons/5/55/President_Barack_Obama%2C_2012_portrait_crop.jpg"></Image>
+                <Label>Obama</Label>
+            </WrapPanel>
+        </RadioButton>
+        <RadioButton x:Name="rbTrump" Checked="rbTrump_Checked" Unchecked="rbTrump_Unchecked" GroupName="Presidents" FontSize="30" VerticalContentAlignment="Center">
+            <WrapPanel>
+                <Image Width="32" Source="https://upload.wikimedia.org/wikipedia/commons/5/56/Donald_Trump_official_portrait.jpg"></Image>
+                <Label x:Name="lbTrump">Trump</Label>
+            </WrapPanel>
+            </RadioButton>
+        <RadioButton GroupName="Presidents" FontSize="30" VerticalContentAlignment="Center">
+            <WrapPanel>
+                <Image Width="32" Source="https://upload.wikimedia.org/wikipedia/commons/e/e1/John_McCain_official_portrait_2009.jpg"></Image>
+                <Label>McCain</Label>
+            </WrapPanel>
+            </RadioButton>
+        <RadioButton GroupName="Presidents" FontSize="30" VerticalContentAlignment="Center">
+            <WrapPanel>
+                <Image Width="32" Source="https://upload.wikimedia.org/wikipedia/commons/6/68/Joe_Biden_presidential_portrait.jpg"></Image>
+                <Label>Biden</Label>
+            </WrapPanel>
+            </RadioButton>
+
+        <Label FontWeight="Bold">How do you feel about it?</Label>
+        <RadioButton GroupName="Feeling">Good</RadioButton>
+        <RadioButton GroupName="Feeling">Ok</RadioButton>
+        <RadioButton GroupName="Feeling">Not happy</RadioButton>
+
+    </StackPanel>
 </Window>
