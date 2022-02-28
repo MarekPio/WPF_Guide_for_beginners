@@ -6,8 +6,7 @@
         xmlns:local="clr-namespace:WpfHelloWorld"
         mc:Ignorable="d"
         Title="Hello World Window" Height="300" Width="300">
-    <StackPanel>
-        <Label>Hello Marek</Label>
-        <Button>Welcome to the course</Button>
-    </StackPanel>
+    <Grid>
+        <Button x:Name="myButton" Content="Hello World"></Button>
+    </Grid>
 </Window>
