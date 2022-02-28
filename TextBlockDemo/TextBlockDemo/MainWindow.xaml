@@ -7,15 +7,9 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="150" Width="200">
     <StackPanel>
-        <TextBlock><Bold>Hello World</Bold> And hello <Italic>you</Italic>
+        <TextBlock x:Name="myTextBlock"><Bold>Hello World</Bold> And hello <Italic>you</Italic>
             <LineBreak/>
             Go to <Hyperlink RequestNavigate="Hyperlink_RequestNavigate" NavigateUri="https://www.google.com">google.com</Hyperlink>
-        </TextBlock>
-        <TextBlock TextWrapping="Wrap" Foreground="Aqua">
-            Loremipsumdolorsitamet,consecteturadipiscingelit.
-            <Span Foreground="Black">sed do</Span>
-            Praesent laoreet et nulla quis bibendum. Sed semper, quam quis mattis pellentesque, est augue placerat sem, et aliquam ligula massa eget lorem. Fusce finibus leo id turpis aliquet, at maximus sapien posuere. Ut bibendum, lacus ut lacinia efficitur, sem odio efficitur urna, nec tincidunt tellus leo ut arcu. Nulla sed arcu urna. Morbi quam lectus, eleifend nec consequat sit amet, porttitor elementum lorem. Aliquam a nibh sed orci venenatis molestie et eget nibh. Suspendisse sed elit sit amet justo congue varius. Pellentesque blandit euismod quam, sed fermentum risus aliquam euismod. Duis sit amet ex tempus, fringilla libero eu, consequat magna. Proin convallis ipsum in diam pulvinar auctor. Pellentesque pulvinar elit vel lorem suscipit, sit amet dapibus mauris laoreet. Suspendisse imperdiet, urna ac convallis congue, mauris justo accumsan metus, in aliquam magna velit a risus. Donec nec turpis tortor.
-            
         </TextBlock>
     </StackPanel>
 </Window>

@@ -23,6 +23,24 @@ namespace TextBlockDemo
         public MainWindow()
         {
             InitializeComponent();
+
+            //myTextBlock.Text = "Hello from the cs side!";
+            //myTextBlock.Foreground = Brushes.Blue;
+
+            TextBlock myTb = new TextBlock();
+            myTb.Text = "Hello World";
+            myTb.Inlines.Add(" this is added using Inlines!");
+            myTb.Inlines.Add(new Run(" Run text that I added in Code behind")
+            {
+                Foreground = Brushes.Red,
+                TextDecorations = TextDecorations.Underline
+            });
+            myTb.TextWrapping = TextWrapping.Wrap;
+            myTb.Foreground = Brushes.BurlyWood;
+
+            this.Content = myTb;
+
+
         }
 
         private void Hyperlink_RequestNavigate(object sender, RequestNavigateEventArgs e)
