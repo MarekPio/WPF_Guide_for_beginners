@@ -6,7 +6,19 @@
         xmlns:local="clr-namespace:LabelDemo"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+    <StackPanel>
+        <Label Margin="16,16,16,0"
+               BorderThickness="1"
+               BorderBrush="Black"
+               >
+            <StackPanel Orientation="Horizontal">
+                <Image Source="https://findicons.com/files/icons/730/soft/128/mail.png" Width="32"></Image>
+                <AccessText  FontSize="32"  Text="Message"></AccessText>
+            </StackPanel>
+        </Label>
+        <TextBox 
+            Margin="16"
+            FontSize="32"
+                 ></TextBox>
+    </StackPanel>
 </Window>
