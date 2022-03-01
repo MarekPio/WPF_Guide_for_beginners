@@ -6,12 +6,20 @@
         xmlns:local="clr-namespace:StackPanelDemo"
         mc:Ignorable="d"
         Title="MainWindow" Height="200" Width="200">
-    <StackPanel 
-        Orientation="Horizontal">
-        <Button VerticalAlignment="Center">Button 1</Button>
-        <Button VerticalAlignment="Bottom">Button 2</Button>
-        <Button VerticalAlignment="Top">Button 3</Button>
-        <Button VerticalAlignment="Stretch">Button 4</Button>
-        <Button>Button 5</Button>
-    </StackPanel>
+    <ScrollViewer>
+        <StackPanel 
+            Orientation="Vertical">
+            <Button>Button 1</Button>
+            <Button>Button 1</Button>
+            <Button>Button 1</Button>
+            <Button>Button 1</Button>
+            <Button>Button 1</Button>
+            <Button>Button 1</Button>
+            <Button>Button 1</Button>
+            <Button>Button 1</Button>
+            <Button>Button 1</Button>
+            <Button>Button 1</Button>
+            <Button>Button 1</Button>
+        </StackPanel>
+    </ScrollViewer>
 </Window>
