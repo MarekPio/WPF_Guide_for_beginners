@@ -23,6 +23,7 @@ namespace SimpleNavigationDemo
     {
         public Page1 FirstPage;
         public Page2 SecondPage;
+        public Page3 ThirdPage;
 
         public MainWindow()
         {
@@ -30,6 +31,7 @@ namespace SimpleNavigationDemo
 
             FirstPage = new Page1();
             SecondPage = new Page2();
+            ThirdPage = new Page3();
         }
 
         private void Button_Click1(object sender, RoutedEventArgs e)
@@ -40,6 +42,27 @@ namespace SimpleNavigationDemo
         private void Button_Click2(object sender, RoutedEventArgs e)
         {
             MainWindowFrame.Content = SecondPage;
+        }
+
+        private void Button_Click3(object sender, RoutedEventArgs e)
+        {
+            MainWindowFrame.Content = ThirdPage;
+        }
+
+        private void Button_Back_Click(object sender, RoutedEventArgs e)
+        {
+            if(MainWindowFrame.NavigationService.CanGoBack)
+            {
+                MainWindowFrame.NavigationService.GoBack();
+            }
+        }
+
+        private void Button_Forward_Click(object sender, RoutedEventArgs e)
+        {
+            if (MainWindowFrame.NavigationService.CanGoForward)
+            {
+                MainWindowFrame.NavigationService.GoForward();
+            }
         }
     }
 }

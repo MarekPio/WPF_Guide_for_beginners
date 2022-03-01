@@ -16,8 +16,11 @@
                     Orientation="Horizontal"
                     HorizontalAlignment="Center"
                     >
+            <Button Width="50" Click="Button_Back_Click">&lt;</Button>
             <Button Width="100" Click="Button_Click1">Page 1</Button>
             <Button Width="100" Click="Button_Click2">Page 2</Button>
+            <Button Width="100" Click="Button_Click3">Page 3</Button>
+            <Button Width="50" Click="Button_Forward_Click">&gt;</Button>
         </StackPanel>
         
         <!-- Frame is parent of Pages -->
