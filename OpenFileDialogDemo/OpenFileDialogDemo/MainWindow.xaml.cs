@@ -30,7 +30,14 @@ namespace OpenFileDialogDemo
         private void OpenFileButton_Click(object sender, RoutedEventArgs e)
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
-            if(openFileDialog.ShowDialog() == true)
+
+            //openFileDialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+            //openFileDialog.InitialDirectory = @"C:\";
+            openFileDialog.InitialDirectory = System.IO.Path.GetFullPath(Environment.CurrentDirectory + @"\..\..\..");
+
+            openFileDialog.Filter = "Text files (*.txt)|*.txt|All file(*.*)|*.*";
+
+            if (openFileDialog.ShowDialog() == true)
             {
                 myTextBox.Text = File.ReadAllText(openFileDialog.FileName);
 

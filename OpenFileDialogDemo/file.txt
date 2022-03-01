@@ -1,0 +1,22 @@
+/**
+ * Release parameters
+ */
+#define CFG_APP_SBS_PROJECT_VERSION         DORY
+#if (1u == UNOFFICIAL_TEST_CODE)
+#if (1u == CFG_APP_DEBUG_MODE)
+#define CFG_APP_SBS_MAJOR_VERSION           254u /* debug */
+#define CFG_APP_SBS_MINOR_VERSION           0u
+#define CFG_APP_SBS_RELEASE_VERSION         10u
+#else
+#define CFG_APP_SBS_MAJOR_VERSION           255u /* test */
+#define CFG_APP_SBS_MINOR_VERSION           0u
+#define CFG_APP_SBS_RELEASE_VERSION         28u
+#endif
+#else
+#define CFG_APP_SBS_MAJOR_VERSION           1u   /* official */
+#define CFG_APP_SBS_MINOR_VERSION           0u
+#define CFG_APP_SBS_RELEASE_VERSION         11u
+#endif
+
+#define CFG_APP_SBS_MAJOR_PCB_VERSION       3u
+#define CFG_APP_SBS_MINOR_PCB_VERSION       0u
