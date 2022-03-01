@@ -44,5 +44,15 @@ namespace OpenFileDialogDemo
             }
 
         }
+
+        private void SaveFileButton_Click(object sender, RoutedEventArgs e)
+        {
+            SaveFileDialog saveFileDialog = new SaveFileDialog();
+            saveFileDialog.Filter = "Text files (*.txt)|*.txt|All file(*.*)|*.*";
+            if(saveFileDialog.ShowDialog() == true)
+            {
+                File.WriteAllText(saveFileDialog.FileName, myTextBox.Text);
+            }
+        }   
     }
 }
