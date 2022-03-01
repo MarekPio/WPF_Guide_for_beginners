@@ -1,0 +1,26 @@
+﻿<Window x:Class="DockPanel.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DockPanel"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="500" Width="500">
+    <DockPanel
+        LastChildFill="False"
+        >
+        <Button
+            Height="100"
+            Width="50"
+            DockPanel.Dock="Top">Top</Button>
+        <Button DockPanel.Dock="Top">Top</Button>
+        <Button DockPanel.Dock="Right" Width="100">Right</Button>
+        <Button DockPanel.Dock="Right">Right</Button>
+        <Button DockPanel.Dock="Left">Left</Button>
+        <Button DockPanel.Dock="Left">Left</Button>
+        <Button DockPanel.Dock="Bottom">Bottom</Button>
+        <Button DockPanel.Dock="Bottom">Bottom</Button>
+        <Image Source="https://upload.wikimedia.org/wikipedia/en/0/02/Homer_Simpson_2006.png"></Image>
+        
+    </DockPanel>
+</Window>
