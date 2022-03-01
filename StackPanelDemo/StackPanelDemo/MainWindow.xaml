@@ -8,16 +8,9 @@
         Title="MainWindow" Height="200" Width="200">
     <StackPanel 
         Orientation="Vertical">
-        <Button>Button 1</Button>
-        <Button>Button 2</Button>
-        <Button>Button 3</Button>
-        <StackPanel 
-            HorizontalAlignment="Center"
-            Orientation="Horizontal">
-            <Button>Button 41</Button>
-            <Button>Button 42</Button>
-            <Button>Button 43</Button>
-        </StackPanel>
-
+        <Button HorizontalAlignment="Center">Button 1</Button>
+        <Button HorizontalAlignment="Left">Button 2</Button>
+        <Button HorizontalAlignment="Right">Button 3</Button>
+        <Button HorizontalAlignment="Stretch">Button 4</Button>
     </StackPanel>
 </Window>
