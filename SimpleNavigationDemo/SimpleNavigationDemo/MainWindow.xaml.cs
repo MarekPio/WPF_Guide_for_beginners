@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using SimpleNavigationDemo.Pages;
 
 namespace SimpleNavigationDemo
 {
@@ -20,9 +21,25 @@ namespace SimpleNavigationDemo
     /// </summary>
     public partial class MainWindow : Window
     {
+        public Page1 FirstPage;
+        public Page2 SecondPage;
+
         public MainWindow()
         {
             InitializeComponent();
+
+            FirstPage = new Page1();
+            SecondPage = new Page2();
+        }
+
+        private void Button_Click1(object sender, RoutedEventArgs e)
+        {
+            MainWindowFrame.Content = FirstPage;
+        }
+
+        private void Button_Click2(object sender, RoutedEventArgs e)
+        {
+            MainWindowFrame.Content = SecondPage;
         }
     }
 }
