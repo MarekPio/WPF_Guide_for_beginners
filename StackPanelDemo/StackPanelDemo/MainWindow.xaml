@@ -7,10 +7,11 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="200" Width="200">
     <StackPanel 
-        Orientation="Vertical">
-        <Button HorizontalAlignment="Center">Button 1</Button>
-        <Button HorizontalAlignment="Left">Button 2</Button>
-        <Button HorizontalAlignment="Right">Button 3</Button>
-        <Button HorizontalAlignment="Stretch">Button 4</Button>
+        Orientation="Horizontal">
+        <Button VerticalAlignment="Center">Button 1</Button>
+        <Button VerticalAlignment="Bottom">Button 2</Button>
+        <Button VerticalAlignment="Top">Button 3</Button>
+        <Button VerticalAlignment="Stretch">Button 4</Button>
+        <Button>Button 5</Button>
     </StackPanel>
 </Window>
