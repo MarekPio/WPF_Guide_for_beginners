@@ -10,6 +10,8 @@
 
     <StackPanel>
         <Label>This is page 2</Label>
-        <Button>Click me</Button>
+        <Button Click="Button_GoToPage1">Go to page 1</Button>
+        <Label>Go to another page</Label>
+        <Button Click="Button_GoToPage3">Go to page 3</Button>
     </StackPanel>
 </Page>

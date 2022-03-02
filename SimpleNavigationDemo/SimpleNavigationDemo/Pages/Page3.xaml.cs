@@ -18,11 +18,20 @@ namespace SimpleNavigationDemo.Pages
     /// <summary>
     /// Interaction logic for Page3.xaml
     /// </summary>
+    /// 
     public partial class Page3 : Page
     {
+        public delegate void OnGoToPage1ButtonClick(object sender, RoutedEventArgs e);
+        public event OnGoToPage1ButtonClick GoToPage1ButtonClick;
+
         public Page3()
         {
             InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            GoToPage1ButtonClick(sender, e);
         }
     }
 }

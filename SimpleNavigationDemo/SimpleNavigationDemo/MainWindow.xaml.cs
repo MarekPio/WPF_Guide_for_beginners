@@ -25,6 +25,7 @@ namespace SimpleNavigationDemo
         public Page2 SecondPage;
         public Page3 ThirdPage;
 
+
         public MainWindow()
         {
             InitializeComponent();
@@ -32,6 +33,9 @@ namespace SimpleNavigationDemo
             FirstPage = new Page1();
             SecondPage = new Page2();
             ThirdPage = new Page3();
+            ThirdPage.GoToPage1ButtonClick += Button_Click1;
+            SecondPage.GoToPage1ButtonClick += Button_Click1;
+            SecondPage.GoToPage3ButtonClick += Button_Click3;
         }
 
         private void Button_Click1(object sender, RoutedEventArgs e)

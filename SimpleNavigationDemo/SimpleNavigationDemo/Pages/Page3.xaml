@@ -10,6 +10,6 @@
 
     <StackPanel>
         <TextBlock>Welcome to page 3</TextBlock>
-        <Button>Don't Click me, I won't do anything anyways!</Button>
+        <Button Click="Button_Click">Go to Page 1</Button>
     </StackPanel>
 </Page>
