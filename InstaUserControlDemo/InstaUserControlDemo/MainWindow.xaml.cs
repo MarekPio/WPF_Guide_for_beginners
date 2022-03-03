@@ -27,6 +27,24 @@ namespace InstaUserControlDemo
             InitializeComponent();
             MainStackPanel.Children.Add(new VideoPostUC(new VideoPostModel()));
             MainStackPanel.Children.Add(new PicturePostUC());
+            MainStackPanel.Children.Add(new VideoPostUC(new VideoPostModel()));
+            MainStackPanel.Children.Add(new PicturePostUC());
+        }
+
+        private void MainScrollViewer_ScrollChanged(object sender, ScrollChangedEventArgs e)
+        {
+            if(e.VerticalChange > 0)
+            {
+                int adjustment = 400;
+                if(e.VerticalOffset + e.ViewportHeight + adjustment >= e.ExtentHeight)
+                {
+                    for(int i = 0; i < 5; i++)
+                    {
+                        PicturePostUC newPost = new PicturePostUC();
+                        MainStackPanel.Children.Add(newPost);
+                    }
+                }
+            }
         }
     }
 }

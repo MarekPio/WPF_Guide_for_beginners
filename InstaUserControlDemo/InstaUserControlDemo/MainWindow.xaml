@@ -7,7 +7,12 @@
         xmlns:uc="clr-namespace:InstaUserControlDemo.UserControls"
         mc:Ignorable="d"
         Title="MainWindow" Height="800" Width="450">
+    <ScrollViewer x:Name="MainScrollViewer"
+                  VerticalScrollBarVisibility="Hidden"
+                  ScrollChanged="MainScrollViewer_ScrollChanged"
+                  >
     <StackPanel x:Name="MainStackPanel">
         <!--<uc:PicturePostUC></uc:PicturePostUC>-->
     </StackPanel>
+    </ScrollViewer>
 </Window>
