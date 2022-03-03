@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32210.238
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DependencyPropertiesColorChanging", "DependencyPropertiesColorChanging\DependencyPropertiesColorChanging.csproj", "{04392480-1101-4E66-AD43-EF9BA0BE8C6C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{04392480-1101-4E66-AD43-EF9BA0BE8C6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04392480-1101-4E66-AD43-EF9BA0BE8C6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04392480-1101-4E66-AD43-EF9BA0BE8C6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04392480-1101-4E66-AD43-EF9BA0BE8C6C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7F0338A1-1B35-488E-BF04-AD24EE6BA098}
+	EndGlobalSection
+EndGlobal
