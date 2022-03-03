@@ -67,12 +67,19 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="PostLikedByUC.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="PostOperationsUC.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="PostLikedByUC.xaml.cs">
+      <DependentUpon>PostLikedByUC.xaml</DependentUpon>
+    </Compile>
     <Compile Include="PostOperationsUC.xaml.cs">
       <DependentUpon>PostOperationsUC.xaml</DependentUpon>
     </Compile>
