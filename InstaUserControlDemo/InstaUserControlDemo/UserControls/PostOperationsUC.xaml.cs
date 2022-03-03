@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace InstaUserControlDemo
+namespace InstaUserControlDemo.UserControls
 {
     /// <summary>
     /// Interaction logic for PostOperationsUC.xaml

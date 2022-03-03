@@ -67,20 +67,27 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="PostLikedByUC.xaml">
+    <Page Include="UserControls\PicturePostUC.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="PostOperationsUC.xaml">
+    <Page Include="UserControls\PostLikedByUC.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\PostOperationsUC.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="PostLikedByUC.xaml.cs">
+    <Compile Include="UserControls\PicturePostUC.xaml.cs">
+      <DependentUpon>PicturePostUC.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\PostLikedByUC.xaml.cs">
       <DependentUpon>PostLikedByUC.xaml</DependentUpon>
     </Compile>
-    <Compile Include="PostOperationsUC.xaml.cs">
+    <Compile Include="UserControls\PostOperationsUC.xaml.cs">
       <DependentUpon>PostOperationsUC.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">

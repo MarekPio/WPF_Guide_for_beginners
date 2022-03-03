@@ -13,16 +13,24 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace InstaUserControlDemo
+namespace InstaUserControlDemo.UserControls
 {
     /// <summary>
-    /// Interaction logic for PostLikedByUC.xaml
+    /// Interaction logic for PicturePostUC.xaml
     /// </summary>
-    public partial class PostLikedByUC : UserControl
+    public partial class PicturePostUC : UserControl
     {
-        public PostLikedByUC()
+        public PicturePostUC()
         {
             InitializeComponent();
+        }
+
+        private void ContentControl_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            if(!PostOps.PostLiked)
+                PostOps.LikePost();
+            else
+                PostOps.UnLikePost();
         }
     }
 }

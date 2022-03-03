@@ -4,11 +4,11 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:InstaUserControlDemo"
+        xmlns:uc="clr-namespace:InstaUserControlDemo.UserControls"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="800" Width="450">
     <StackPanel>
         <!--<local:PostOperationsUC Height="40"></local:PostOperationsUC>-->
-        <local:PostOperationsUC Height="40"></local:PostOperationsUC>
-        <local:PostLikedByUC></local:PostLikedByUC>
+        <uc:PicturePostUC></uc:PicturePostUC>
     </StackPanel>
 </Window>
