@@ -22,13 +22,16 @@ namespace InstaUserControlDemo
     /// </summary>
     public partial class MainWindow : Window
     {
+        Random Generator;
         public MainWindow()
         {
+            Generator = new Random(DateTime.Now.Millisecond);
+
             InitializeComponent();
             MainStackPanel.Children.Add(new VideoPostUC(new VideoPostModel()));
-            MainStackPanel.Children.Add(new PicturePostUC());
+            MainStackPanel.Children.Add(new PicturePostUC(new PicturePostModel()));
             MainStackPanel.Children.Add(new VideoPostUC(new VideoPostModel()));
-            MainStackPanel.Children.Add(new PicturePostUC());
+            MainStackPanel.Children.Add(new PicturePostUC(new PicturePostModel()));
         }
 
         private void MainScrollViewer_ScrollChanged(object sender, ScrollChangedEventArgs e)
@@ -40,8 +43,17 @@ namespace InstaUserControlDemo
                 {
                     for(int i = 0; i < 5; i++)
                     {
-                        PicturePostUC newPost = new PicturePostUC();
-                        MainStackPanel.Children.Add(newPost);
+                        if (Generator.Next(0, 100) < 70)
+                        {
+                            PicturePostUC newPost = new PicturePostUC(new PicturePostModel());
+                            MainStackPanel.Children.Add(newPost);
+                        }
+                        else
+                        {
+                            VideoPostUC newVid = new VideoPostUC(new VideoPostModel());
+                            MainStackPanel.Children.Add(newVid);
+                        }
+                        
                     }
                 }
             }

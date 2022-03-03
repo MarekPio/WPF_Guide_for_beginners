@@ -1,4 +1,5 @@
-﻿using System;
+﻿using InstaUserControlDemo.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,9 +21,10 @@ namespace InstaUserControlDemo.UserControls
     /// </summary>
     public partial class PicturePostUC : UserControl
     {
-        public PicturePostUC()
+        public PicturePostUC(PicturePostModel picturePostModel)
         {
             InitializeComponent();
+            ImageOfPost.Source = picturePostModel.PostImage;
         }
 
         private void ContentControl_MouseDoubleClick(object sender, MouseButtonEventArgs e)

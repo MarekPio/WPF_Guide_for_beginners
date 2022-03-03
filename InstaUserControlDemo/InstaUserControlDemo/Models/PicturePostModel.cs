@@ -1,4 +1,5 @@
-﻿using System;
+﻿using InstaUserControlDemo.Database;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,8 +8,24 @@ using System.Windows.Media.Imaging;
 
 namespace InstaUserControlDemo.Models
 {
-    internal class PicturePostModel
+    public class PicturePostModel
     {
-        public BitmapImage PostImage;
+        BitmapImage _PostImage;
+
+        public BitmapImage PostImage
+        {
+            get
+            {
+                if (_PostImage == null)
+                    return MockDb.GetPostPicture();
+                else
+                    return _PostImage;
+
+            }
+            set
+            {
+                _PostImage = value;
+            }
+        }
     }
 }
