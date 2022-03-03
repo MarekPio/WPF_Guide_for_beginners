@@ -55,6 +55,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Database\MockDb.cs" />
+    <Compile Include="Models\VideoPostModel.cs" />
+    <Compile Include="UserControls\VideoPostUC.xaml.cs">
+      <DependentUpon>VideoPostUC.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -79,8 +84,13 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="UserControls\VideoPostUC.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Models\PicturePostModel.cs" />
     <Compile Include="UserControls\PicturePostUC.xaml.cs">
       <DependentUpon>PicturePostUC.xaml</DependentUpon>
     </Compile>
@@ -124,6 +134,10 @@
     <Resource Include="Icons\post2.jpg" />
     <Resource Include="Icons\post3.jpg" />
     <Resource Include="Icons\send.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Videos\cat.mp4" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

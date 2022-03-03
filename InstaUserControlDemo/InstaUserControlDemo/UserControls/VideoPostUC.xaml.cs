@@ -1,5 +1,4 @@
 ﻿using InstaUserControlDemo.Models;
-using InstaUserControlDemo.UserControls;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,18 +14,26 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace InstaUserControlDemo
+namespace InstaUserControlDemo.UserControls
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for VideoPostUC.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class VideoPostUC : UserControl
     {
-        public MainWindow()
+        public VideoPostUC(VideoPostModel videoPostModel)
         {
             InitializeComponent();
-            MainStackPanel.Children.Add(new VideoPostUC(new VideoPostModel()));
-            MainStackPanel.Children.Add(new PicturePostUC());
+
+            VideoPlayer.Source = videoPostModel.VideoPlayerSource;
+        }
+
+        private void ContentControl_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            if (!PostOps.PostLiked)
+                PostOps.LikePost();
+            else
+                PostOps.UnLikePost();
         }
     }
 }
