@@ -11,6 +11,8 @@
             <Button Name="Odd" Click="Odd_Click">Filter odd numbers</Button>
             <Button Name="Even" Click="Even_Click">Filter even numbers</Button>
             <Button Name="RemoveFilter" Click="RemoveFilter_Click">Remove Filter</Button>
+            <Button Name="Ascending" Click="Ascending_Click">Ascending</Button>
+            <Button Name="Descending" Click="Descending_Click">Descending</Button>
         </StackPanel>
         <TextBlock Name="MyTextBlock"/>
 

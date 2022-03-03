@@ -40,30 +40,56 @@ namespace LinqDemo
             return accum;
         }
 
-        public string FilterListOddNumbers(List<int> inList)
+        public List<int> FilterListOddNumbers(List<int> inList)
         {
                               /* Linq expression */
-            return StringifyList(inList.Where(i => (i % 2) != 0).ToList());
+            return inList.Where(i => (i % 2) != 0).ToList();
         }
 
-        public string FilterListEvenNumbers(List<int> inList)
+        public List<int> FilterListEvenNumbers(List<int> inList)
         {
                               /* Linq expression */
-            return StringifyList(inList.Where(i => (i % 2) == 0).ToList());
+            return inList.Where(i => (i % 2) == 0).ToList();
         }
 
         private void Odd_Click(object sender, RoutedEventArgs e)
         {
-            MyTextBlock.Text = FilterListOddNumbers(myList);
+            myList = FilterListOddNumbers(myList);
+            MyTextBlock.Text = StringifyList(myList);
         }
 
         private void Even_Click(object sender, RoutedEventArgs e)
         {
-            MyTextBlock.Text = FilterListEvenNumbers(myList);
+            myList = FilterListEvenNumbers(myList);
+            MyTextBlock.Text = StringifyList(myList);
         }
 
         private void RemoveFilter_Click(object sender, RoutedEventArgs e)
         {
+            myList = new List<int>() { 4, 5, 6, 3, 2, 1, 7, 8, 9 };
+            MyTextBlock.Text = StringifyList(myList);
+        }
+
+        public List<int> SortAscending(List<int> inList)
+        {
+            /* Go through every sigle item and order this list */
+            return inList.OrderBy(i => i).ToList();
+        }
+
+        public List<int> SortDescending(List<int> inList)
+        {
+            return inList.OrderByDescending(i => i).ToList();
+        }
+
+        private void Ascending_Click(object sender, RoutedEventArgs e)
+        {
+            myList = SortAscending(myList);
+            MyTextBlock.Text = StringifyList(myList);
+        }
+
+        private void Descending_Click(object sender, RoutedEventArgs e)
+        {
+            myList = SortDescending(myList);
             MyTextBlock.Text = StringifyList(myList);
         }
     }
