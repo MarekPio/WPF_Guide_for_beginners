@@ -37,12 +37,18 @@ namespace WindowsStoreClone.UserControls
 
         private void ScrollLeftButton_Click(object sender, RoutedEventArgs e)
         {
+            int widthOfOneApp = (int)PresentedApps.First().ActualWidth // App width
+                + 2 * (int)PresentedApps.First().Margin.Left;          // Margin of both sides
 
+            AppsScrollView.ScrollToHorizontalOffset(AppsScrollView.HorizontalOffset - 4 * widthOfOneApp);
         }
 
         private void ScrollRightButton_Click(object sender, RoutedEventArgs e)
         {
+            int widthOfOneApp = (int)PresentedApps.First().ActualWidth // App width
+                + 2 * (int)PresentedApps.First().Margin.Left;          // Margin of both sides
 
+            AppsScrollView.ScrollToHorizontalOffset(AppsScrollView.HorizontalOffset + 4 * widthOfOneApp);
         }
     }
 }

@@ -30,7 +30,7 @@
             />
         <ScrollViewer
             Grid.Column="1"
-            x:Name="AppsCrollView"
+            x:Name="AppsScrollView"
             VerticalScrollBarVisibility="Hidden"
             HorizontalScrollBarVisibility="Hidden"
             >
