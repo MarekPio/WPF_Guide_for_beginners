@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32210.238
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsStoreClone", "WindowsStoreClone\WindowsStoreClone.csproj", "{EE06A9BF-77D1-4F79-9D51-9EA6E3D19ABE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EE06A9BF-77D1-4F79-9D51-9EA6E3D19ABE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE06A9BF-77D1-4F79-9D51-9EA6E3D19ABE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE06A9BF-77D1-4F79-9D51-9EA6E3D19ABE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE06A9BF-77D1-4F79-9D51-9EA6E3D19ABE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3D0BC285-A7B6-4E06-ABA2-1DC15729097B}
+	EndGlobalSection
+EndGlobal
