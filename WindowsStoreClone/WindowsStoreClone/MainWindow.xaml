@@ -9,6 +9,7 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <!--<uc:AppsViewer></uc:AppsViewer>-->
-        <uc:TopApps></uc:TopApps>
+        <!--<uc:TopApps></uc:TopApps>-->
+        <uc:ProductivityTopApp></uc:ProductivityTopApp>
     </Grid>
 </Window>
