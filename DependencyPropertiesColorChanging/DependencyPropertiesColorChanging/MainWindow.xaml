@@ -5,9 +5,32 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DependencyPropertiesColorChanging"
         mc:Ignorable="d"
-        Title="MainWindow" Height="130" Width="200">
+        Title="MainWindow" 
+        Height="230" 
+        Width="300">
     <StackPanel>
-        <TextBlock x:Name="myTB" Text="Hello World!" Width="110" FontSize="20" >
+        <Button Margin="5" Width="120" Click="Button_Click">Increase Awesomeness</Button>
+        <local:myUC x:Name="MyUCinMain" Awesomeness="4000">
+            <local:myUC.Style>
+                <Style TargetType="local:myUC">
+                    <Style.Triggers>
+                        <Trigger Property="Awesomeness" Value="10000">
+                            <Setter Property="Background" Value="Red"></Setter>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </local:myUC.Style>
+        </local:myUC>
+
+        <Label
+            Name="AwesomenessLabel"
+            Content="{Binding ElementName=MyUCinMain, Path=Awesomeness}"
+            FontSize="30"
+            HorizontalAlignment="Center"
+            >
+        </Label>
+        
+        <!--<TextBlock x:Name="myTB" Text="Hello World!" Width="110" FontSize="20" >
             <TextBlock.Style>
                 <Style TargetType="TextBlock">
                     <Style.Triggers>
@@ -17,7 +40,7 @@
                     </Style.Triggers>
                 </Style>
             </TextBlock.Style>
-        </TextBlock>
+        </TextBlock>-->
         
     </StackPanel>
 </Window>

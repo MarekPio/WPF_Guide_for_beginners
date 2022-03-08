@@ -24,5 +24,10 @@ namespace DependencyPropertiesColorChanging
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            MyUCinMain.Awesomeness += 1000;
+        }
     }
 }
