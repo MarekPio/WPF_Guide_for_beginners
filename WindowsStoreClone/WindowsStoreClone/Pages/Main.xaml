@@ -124,7 +124,89 @@
                     
                 </ScrollViewer>
             </TabItem>
-            
+
+            <TabItem Header="Gaming">
+                <StackPanel>
+                    <Label
+                        HorizontalAlignment="Left"
+                        Margin="10,10,10,10"
+                        Content="Top free games"
+                        FontSize="40"
+                        />
+                    <uc:AppsViewer x:Name="GamingAppsViewer"
+                                   Width="{Binding ElementName=MainTabControl, Path=ActualWidth}"
+                                   HorizontalAlignment="Left"/>
+
+                </StackPanel>
+            </TabItem>
+
+            <TabItem Header="Entertainment">
+                <StackPanel>
+                    <Label
+                        HorizontalAlignment="Left"
+                        Margin="10,10,10,10"
+                        Content="Top free apps"
+                        FontSize="40"
+                        />
+                    <uc:AppsViewer x:Name="EntertainmentAppsViewer"
+                                   Width="{Binding ElementName=MainTabControl, Path=ActualWidth}"
+                                   HorizontalAlignment="Left"/>
+
+                </StackPanel>
+            </TabItem>
+
+            <TabItem Header="Productivity">
+                <ScrollViewer 
+                    Name="MainProductivitySV"
+                    Margin="10"
+                    HorizontalScrollBarVisibility="Hidden"
+                    VerticalScrollBarVisibility="Hidden"
+                    >
+                    <StackPanel
+                        Name="MainProductivitySP"
+                        Width="{Binding ElementName=MainProductivitySV, Path=ActualWidth}"
+                        >
+                        
+                        <uc:ProductivityTopApps 
+                            x:Name="ProductivityTopApps"
+                            Width="{Binding ElementName=MainProductivitySP, Path=ActualWidth}"
+                            />
+
+                        <Label
+                        HorizontalAlignment="Left"
+                        Margin="10,10,10,10"
+                        Content="App specials"
+                        FontSize="40"
+                        />
+
+                        <uc:AppsViewer 
+                            x:Name="ProductivityAppsL1" 
+                            Width="{Binding ElementName=MainProductivitySP, Path=ActualWidth}"
+                            HorizontalAlignment="Left"
+                            />
+
+                    </StackPanel>
+                </ScrollViewer>
+            </TabItem>
+
+            <TabItem Header="Deals">
+                <StackPanel>
+                    <Label
+                        HorizontalAlignment="Left"
+                        Margin="10,10,10,10"
+                        Content="App specials"
+                        FontSize="40"
+                        />
+
+                    <uc:AppsViewer 
+                            x:Name="DealAppsView" 
+                            Width="{Binding ElementName=MainTabControl, Path=ActualWidth}"
+                            HorizontalAlignment="Left"
+                            />
+                </StackPanel>
+                
+            </TabItem>
+
         </TabControl>
         
     </Grid>

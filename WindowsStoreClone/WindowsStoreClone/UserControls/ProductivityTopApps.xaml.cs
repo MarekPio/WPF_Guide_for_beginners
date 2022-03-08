@@ -18,9 +18,9 @@ namespace WindowsStoreClone.UserControls
     /// <summary>
     /// Interaction logic for ProductivityTopApp.xaml
     /// </summary>
-    public partial class ProductivityTopApp : UserControl
+    public partial class ProductivityTopApps : UserControl
     {
-        public ProductivityTopApp()
+        public ProductivityTopApps()
         {
             InitializeComponent();
         }
