@@ -230,6 +230,10 @@
             </TabItem>
 
         </TabControl>
-        
+        <uc:HeaderRightButtons
+            x:Name="RightHeaderButtons"
+            Grid.Row="0" Grid.Column="2"
+            Grid.ColumnSpan="1"
+            />
     </Grid>
 </Page>
