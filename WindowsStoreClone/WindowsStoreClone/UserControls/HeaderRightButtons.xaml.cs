@@ -52,5 +52,6 @@ namespace WindowsStoreClone.UserControls
         {
             HeaderRightButtonsDownloadButtonClick(sender, e);
         }
+
     }
 }

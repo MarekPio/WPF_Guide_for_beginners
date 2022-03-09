@@ -76,5 +76,10 @@ namespace WindowsStoreClone.Pages
             element.BeginAnimation(UIElement.OpacityProperty, animation);
 
         }
+
+        private void Page_PreviewMouseDown(object sender, MouseButtonEventArgs e)
+        {
+            RightHeaderButtons.MouseDown_OutsideOfHeaderRightButtons();
+        }
     }
 }
