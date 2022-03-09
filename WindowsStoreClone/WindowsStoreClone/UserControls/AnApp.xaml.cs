@@ -42,9 +42,18 @@ namespace WindowsStoreClone.UserControls
                 .Split('-').Last()    // snapchat.png
                 .Split('.').First()   // snapchat
                 );
-
             AppName = AppNameText.Text.ToString();
             AppImageSource = ProductImage.Source;
+        }
+
+        public AnApp(string inAppName, ImageSource inImageSource)
+        {
+            InitializeComponent();
+
+            ProductImage.Source = inImageSource;
+            AppNameText.Text = inAppName;
+            AppName = inAppName;
+            AppImageSource = inImageSource;
         }
 
         private void ProductImage_MouseUp(object sender, MouseButtonEventArgs e)
