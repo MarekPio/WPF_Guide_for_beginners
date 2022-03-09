@@ -51,7 +51,7 @@
                     </TabItem>
 
                     <TabItem Header="Related">
-                        
+                        <ucappdet:Related/>
                     </TabItem>
                     
                 </TabControl>
