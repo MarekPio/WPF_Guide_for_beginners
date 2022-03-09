@@ -185,6 +185,28 @@
                             HorizontalAlignment="Left"
                             />
 
+                        <Label 
+                            HorizontalAlignment="Left"
+                            Margin="10,10,10,10"
+                            Content="Best selling apps" 
+                            FontSize="40" 
+                        />
+                        <uc:AppsViewer x:Name="ProductivityAppsL2"
+                            Width="{Binding ElementName=MainProductivitySP, Path=ActualWidth}"
+                            HorizontalAlignment="Left"
+                        />
+
+                        <Label 
+                            HorizontalAlignment="Left"
+                            Margin="10,10,10,10"
+                            Content="Favorite apps" 
+                            FontSize="40" 
+                        />
+                        <uc:AppsViewer x:Name="ProductivityAppsL3"
+                            Width="{Binding ElementName=MainTabControl, Path=ActualWidth}"
+                            HorizontalAlignment="Left"
+                        />
+
                     </StackPanel>
                 </ScrollViewer>
             </TabItem>
