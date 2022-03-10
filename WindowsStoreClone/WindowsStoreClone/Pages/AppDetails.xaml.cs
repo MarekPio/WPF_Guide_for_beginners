@@ -27,12 +27,12 @@ namespace WindowsStoreClone.Pages
         public delegate void OnAppDetailsAppClicked(AnApp sender, RoutedEventArgs e);
         public event OnAppDetailsAppClicked AppClicked;
 
-        public AppDetails(AnApp anApp)
+        public AppDetails(AnApp inApp)
         {
             InitializeComponent();
 
-            AppDetailsAndBackgroundUC.AppNameLabel.Content = anApp.AppName;
-            AppDetailsAndBackgroundUC.AppImage.Source = anApp.AppImageSource;
+            AppDetailsAndBackgroundUC.AppNameLabel.Content = inApp.AppName;
+            AppDetailsAndBackgroundUC.AppImage.Source = inApp.AppImageSource;
             AppDetailsAndBackgroundUC.BackButtonClicked += AppDetailsAndBackgroundUC_BackButtonClicked;
 
             OverviewTabUC.AppClicked += OverviewTabUC_appClicked;

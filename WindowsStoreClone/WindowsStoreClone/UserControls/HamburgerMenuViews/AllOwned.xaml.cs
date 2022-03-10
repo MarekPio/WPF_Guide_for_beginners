@@ -38,11 +38,11 @@ namespace WindowsStoreClone.UserControls.HamburgerMenuViews
         {
             if((sender as MenuItem).Header.ToString().ToLower() == "all types")
             {
-                HamAppList.AddAll();
+                HamAppsList.AddAll();
             }
             else
             {
-                HamAppList.FilterByType((sender as MenuItem).Header.ToString());
+                HamAppsList.FilterByType((sender as MenuItem).Header.ToString());
             }
         }
 
@@ -50,11 +50,11 @@ namespace WindowsStoreClone.UserControls.HamburgerMenuViews
         {
             if ((sender as MenuItem).Header.ToString().ToLower() == "sort by name")
             {
-                HamAppList.SortByName();
+                HamAppsList.SortByName();
             }
             else
             {
-                HamAppList.SortByDate();
+                HamAppsList.SortByDate();
             }
         }
     }

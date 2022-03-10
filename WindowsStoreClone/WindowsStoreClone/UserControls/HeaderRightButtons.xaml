@@ -34,7 +34,7 @@
                 >
             </TextBox>
         </Grid>
-        <Menu Name="SingInMenu">
+        <Menu Name="SignInMenu">
             <MenuItem Height="40" Width="48" x:Name="SignInButton">
                 <MenuItem.Header>
                     <Label

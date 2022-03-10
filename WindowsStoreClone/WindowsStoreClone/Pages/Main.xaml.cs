@@ -49,7 +49,12 @@ namespace WindowsStoreClone.Pages
             TopFreeAppsViewer.AppClicked += AnAppClicked;
             TopFreeGamesAppsViewer.AppClicked += AnAppClicked;
 
+            RightHeaderButtons.HeaderRightButtonsDownloadButtonClick += RightHeaderButtons_HeaderRightButtonsDownloadButtonClick;
 
+        }
+
+        private void RightHeaderButtons_HeaderRightButtonsDownloadButtonClick(object sender, RoutedEventArgs e)
+        {
 
         }
 

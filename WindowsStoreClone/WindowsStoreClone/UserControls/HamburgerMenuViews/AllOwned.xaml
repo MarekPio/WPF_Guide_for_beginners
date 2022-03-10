@@ -9,11 +9,12 @@
     <ScrollViewer
         Name="MainScrollViewer"
         HorizontalScrollBarVisibility="Hidden"
+        VerticalScrollBarVisibility="Hidden"
         >
 
         <StackPanel>
             <local:HamburgerMenuHeader x:Name="HamHeader"></local:HamburgerMenuHeader>
-            <local:HamburgerMenuAppList x:Name="HamAppList"></local:HamburgerMenuAppList>
+            <local:HamburgerMenuAppList x:Name="HamAppsList"></local:HamburgerMenuAppList>
             
             
         </StackPanel>

@@ -418,12 +418,6 @@
     <Resource Include="Images\GameIcons\stockGameIcons\049-80s.png" />
     <Resource Include="Images\GameIcons\stockGameIcons\050-diamond - Copy.png" />
     <Resource Include="Images\GameIcons\stockGameIcons\050-diamond.png" />
-    <Resource Include="Images\ProductivityAppIcons\ACDSee.png" />
-    <Resource Include="Images\ProductivityAppIcons\DrawboardPDF.png" />
-    <Resource Include="Images\ProductivityAppIcons\HotspotShield.png" />
-    <Resource Include="Images\ProductivityAppIcons\Photoshop.png" />
-    <Resource Include="Images\ProductivityAppIcons\PicsArt.png" />
-    <Resource Include="Images\ProductivityAppIcons\YourPhone.png" />
     <Resource Include="Images\topapp1.png" />
     <Resource Include="Images\topappsmall1.png" />
     <Resource Include="Images\topappsmall2.png" />
@@ -513,6 +507,14 @@
     <Resource Include="Images\MiniIcons\068-waze.png" />
     <Resource Include="Images\MiniIcons\069-linkedin.png" />
     <Resource Include="Images\MiniIcons\070-file hosting.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\ProductivityAppIcons\01-Finance.jpg" />
+    <Resource Include="Images\ProductivityAppIcons\02-Photoshop.jpg" />
+    <Resource Include="Images\ProductivityAppIcons\03-Slick Draw.jpg" />
+    <Resource Include="Images\ProductivityAppIcons\04-snack.jpg" />
+    <Resource Include="Images\ProductivityAppIcons\05-Watch.jpg" />
+    <Resource Include="Images\ProductivityAppIcons\06-phone.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

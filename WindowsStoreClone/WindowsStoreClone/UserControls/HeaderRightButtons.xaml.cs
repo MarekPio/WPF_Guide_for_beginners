@@ -38,8 +38,8 @@ namespace WindowsStoreClone.UserControls
         {
             if(!SearchTextBox.IsMouseOver)
             {
-                SearchButton.Visibility = Visibility.Visible;
                 SearchTextBox.Visibility = Visibility.Collapsed;
+                SearchButton.Visibility = Visibility.Visible;
             }
         }
 
