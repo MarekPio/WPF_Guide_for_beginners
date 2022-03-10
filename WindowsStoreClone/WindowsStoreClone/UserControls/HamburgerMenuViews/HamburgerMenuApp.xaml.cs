@@ -51,7 +51,7 @@ namespace WindowsStoreClone.UserControls.HamburgerMenuViews
             AppName = AppNameLabel.Content.ToString();
             Type = AppTypes[StaticRandom.Next(AppTypes.Count)];
             Purchased = new DateTime(2021, 1, StaticRandom.Next(1, DateTime.Now.Day + 1));
-            PuraschedLabel.Content = "Purasched" + Purchased.ToString("d");
+            PuraschedLabel.Content = "Purasched " + Purchased.ToString("d");
 
         }
     }

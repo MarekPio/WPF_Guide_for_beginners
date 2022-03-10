@@ -25,10 +25,11 @@ namespace WindowsStoreClone.UserControls.HamburgerMenuViews
 
         public HamburgerMenuAppList()
         {
-            InitializeComponent();
-
             AllApps = new List<HamburgerMenuApp>();
             AppsOnFilter = new List<HamburgerMenuApp>();
+
+            InitializeComponent();
+
             for (int i = 0; i < 15; i++)
             {
                 AddNewHamApp();
@@ -38,45 +39,55 @@ namespace WindowsStoreClone.UserControls.HamburgerMenuViews
 
         private void AddNewHamApp()
         {
-            HamburgerMenuApp anApp = new HamburgerMenuApp();
-            MainStackPanel.Children.Add(anApp);
-            AllApps.Add(anApp);
+            HamburgerMenuApp app = new HamburgerMenuApp();
+            MainStackPanel.Children.Add(app);
+            AllApps.Add(app);
         }
 
         public void FilterByType(string inFilter)
         {
             AppsOnFilter = AllApps.Where(p => p.Type == inFilter).ToList<HamburgerMenuApp>();
-            MainStackPanel.Children.Clear();
-            foreach(HamburgerMenuApp item in AppsOnFilter)
-            {
-                MainStackPanel.Children.Add(item);
-            }
+            AddToMainStackPanel(AppsOnFilter);
         }
 
         public void AddAll()
         {
-            MainStackPanel.Children.Clear();
-            foreach(HamburgerMenuApp item in AllApps)
-            {
-                MainStackPanel.Children.Add(item);
-            }
+            AppsOnFilter = new List<HamburgerMenuApp>();
+            AddToMainStackPanel(AllApps);
         }
 
         public void SortByName()
         {
-            List<HamburgerMenuApp> AllAppsSorted = AllApps.OrderBy(p => p.Name).ToList<HamburgerMenuApp>();
-            MainStackPanel.Children.Clear();
-            foreach (HamburgerMenuApp item in AllAppsSorted)
+            List<HamburgerMenuApp> AllAppsSorted = new List<HamburgerMenuApp>();
+            if (AppsOnFilter.Count > 1)
             {
-                MainStackPanel.Children.Add(item);
+                AllAppsSorted = AllApps.OrderBy(p => p.AppName).ToList<HamburgerMenuApp>();
             }
+            else
+            {
+                AllAppsSorted = AppsOnFilter.OrderBy(p => p.AppName).ToList<HamburgerMenuApp>();
+            }
+            AddToMainStackPanel(AllAppsSorted);
         }
 
         public void SortByDate()
         {
-            List<HamburgerMenuApp> AllAppsSorted = AllApps.OrderByDescending(p => p.Purchased).ToList<HamburgerMenuApp>();
+            List<HamburgerMenuApp> AllAppsSorted = new List<HamburgerMenuApp>();
+            if(AppsOnFilter.Count > 1)
+            {
+                AllAppsSorted = AllApps.OrderByDescending(p => p.Purchased).ToList<HamburgerMenuApp>();
+            }
+            else
+            {
+                AllAppsSorted = AppsOnFilter.OrderByDescending(p => p.Purchased).ToList<HamburgerMenuApp>();
+            }
+            AddToMainStackPanel(AllAppsSorted);
+        }
+
+        private void AddToMainStackPanel(List<HamburgerMenuApp> inList)
+        {
             MainStackPanel.Children.Clear();
-            foreach (HamburgerMenuApp item in AllAppsSorted)
+            foreach (HamburgerMenuApp item in inList)
             {
                 MainStackPanel.Children.Add(item);
             }
